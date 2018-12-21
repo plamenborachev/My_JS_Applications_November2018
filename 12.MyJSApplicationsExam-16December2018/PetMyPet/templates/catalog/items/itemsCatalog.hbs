@@ -1,0 +1,20 @@
+<section class="dashboard">
+    <h1>Dashboard</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#/viewCatalog">All</a></li>
+            <li><a href="#/viewCatalog/cats">Cats</a></li>
+            <li><a href="#/viewCatalog/dogs">Dogs</a></li>
+            <li><a href="#/viewCatalog/parrots">Parrots</a></li>
+            <li><a href="#/viewCatalog/reptiles">Reptiles</a></li>
+            <li><a href="#/viewCatalog/other">Other</a></li>
+        </ul>
+    </nav>
+    <ul class="other-pets-list">
+        {{#each items}}
+            {{> itemBox}}
+        {{/each}}
+    </ul>
+</section>
+
+
